@@ -93,3 +93,5 @@
 (color-theme-railscasts)
 
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
+(split-window-right)
+
