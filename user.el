@@ -76,6 +76,16 @@
 
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
 (add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(setq cider-repl-use-clojure-font-lock nil)
+(setq inferior-lisp-command "lein repl"
+      cider-repl-popup-stacktraces t)
+(setq nrepl-hide-special-buffers t)
+(add-hook 'cider-repl-mode-hook 'subword-mode)
+(add-hook 'clojure-mode-hook 'subword-mode)
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
+
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 
