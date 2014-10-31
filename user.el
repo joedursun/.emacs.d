@@ -89,5 +89,10 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 
-(load-theme 'zenburn t)
+;; railscasts theme
+(require 'color-theme)
+(color-theme-initialize)
+(load-file "~/.emacs.d/themes/color-theme-railscasts.el")
+(color-theme-railscasts)
+
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
