@@ -5,9 +5,6 @@
 
 ;; Stu's init.el
 ;; https://gist.github.com/stuarth/98e5d6ad473d294e4037
-
-(setq initial-frame-alist '((top . 0) (left . 55) (width . 200) (height . 60)))
-
 (require 'linum)
 (line-number-mode 1)
 (column-number-mode 1)

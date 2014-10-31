@@ -8,4 +8,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(load "~/.emacs.d/user.el")
+(defvar custom-files '("~/.emacs.d/window-size.el"
+                       "~/.emacs.d/user.el"))
+
+(dolist (file custom-files)
+  (when (file-exists-p  file)
+  (load file)))
