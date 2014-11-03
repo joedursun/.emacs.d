@@ -103,3 +103,6 @@
 
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (split-window-right)
+
+;; key bindings
+(global-set-key (kbd "C-b") 'backward-kill-word)
