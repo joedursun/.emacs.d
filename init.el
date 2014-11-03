@@ -9,7 +9,8 @@
   (package-refresh-contents))
 
 (defvar custom-files '("~/.emacs.d/window-size.el"
-                       "~/.emacs.d/user.el"))
+                       "~/.emacs.d/user.el"
+                       "~/.emacs.d/macros.el"))
 
 (dolist (file custom-files)
   (when (file-exists-p  file)
