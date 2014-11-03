@@ -47,10 +47,13 @@
                       magit
                       paredit
                       projectile
+                      projectile-rails
                       ruby-end
                       slim-mode
                       smart-tab
-                      starter-kit-lisp))
+                      starter-kit-lisp
+                      flymake-ruby
+                      flx-ido))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
@@ -58,10 +61,16 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
-(require 'ruby-end)
 (require 'better-defaults)
 (require 'smart-tab)
 (require 'company)
+
+;; Ruby
+(require 'flymake-ruby)
+(require 'ruby-end)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+(add-hook 'ruby-mode-hook 'projectile-on)
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 (custom-set-variables
  '(company-idle-delay nil)
@@ -94,4 +103,3 @@
 
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (split-window-right)
-
