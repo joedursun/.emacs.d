@@ -115,3 +115,4 @@
 (global-set-key (kbd "C-f") 'ag)
 (global-set-key (kbd "s-F") 'replace-string)
 (global-set-key (kbd "s-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "C-N") 'mc/mark-next-like-this)
