@@ -40,7 +40,9 @@
                       slim-mode
                       smart-tab
                       flymake-ruby
-                      flx-ido))
+                      flx-ido
+                      textmate
+                      ag))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
@@ -52,6 +54,7 @@
 (require 'better-defaults)
 (require 'smart-tab)
 (require 'company)
+(require 'textmate)
 
 ;; Ruby
 (require 'flymake-ruby)
@@ -89,7 +92,8 @@
 (set-default-font "Inconsolata 16")
 
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
-(split-window-right)
+;(split-window-right)
+(textmate-mode)
 
 ;; Silver searcher
 (setq ag-reuse-buffers 't)
