@@ -61,6 +61,7 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(require 'projectile)
 (require 'better-defaults)
 (require 'smart-tab)
 (require 'company)
@@ -69,8 +70,6 @@
 (require 'flymake-ruby)
 (require 'ruby-end)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
-(add-hook 'ruby-mode-hook 'projectile-on)
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 (custom-set-variables
  '(company-idle-delay nil)
@@ -106,6 +105,10 @@
 
 ;; Silver searcher
 (setq ag-reuse-buffers 't)
+
+;; Projectile
+(setq projectile-switch-project-action 'projectile-dired)
+(projectile-global-mode)
 
 ;; key bindings
 (global-set-key (kbd "C-b") 'backward-kill-word)
