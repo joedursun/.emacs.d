@@ -52,11 +52,11 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(require 'textmate)
 (require 'projectile)
 (require 'better-defaults)
 (require 'smart-tab)
 (require 'company)
-(require 'textmate)
 
 ;; Ruby
 (require 'flymake-ruby)
@@ -106,8 +106,9 @@
 (define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
 (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
 (define-key projectile-mode-map [?\s-t] 'projectile-find-file)
+(define-key projectile-mode-map [?\s-f] 'ag-project-regexp)
 
 ;; key bindings
 (global-set-key (kbd "C-b") 'backward-kill-word)
 (global-set-key (kbd "C-f") 'ag)
-(global-set-key (kbd "s-f") 'replace-string)
+(global-set-key (kbd "s-F") 'replace-string)
