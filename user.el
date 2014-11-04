@@ -44,7 +44,8 @@
                       textmate
                       ag
                       go-mode
-                      go-projectile))
+                      go-projectile
+                      multiple-cursors))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
@@ -57,6 +58,7 @@
 (require 'better-defaults)
 (require 'smart-tab)
 (require 'company)
+(require 'multiple-cursors)
 
 ;; Ruby
 (require 'flymake-ruby)
@@ -112,3 +114,4 @@
 (global-set-key (kbd "C-b") 'backward-kill-word)
 (global-set-key (kbd "C-f") 'ag)
 (global-set-key (kbd "s-F") 'replace-string)
+(global-set-key (kbd "s-<mouse-1>") 'mc/add-cursor-on-click)
