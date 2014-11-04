@@ -104,5 +104,9 @@
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (split-window-right)
 
+;; Silver searcher
+(setq ag-reuse-buffers 't)
+
 ;; key bindings
 (global-set-key (kbd "C-b") 'backward-kill-word)
+(global-set-key (kbd "C-f") 'ag)
