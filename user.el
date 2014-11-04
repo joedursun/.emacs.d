@@ -51,7 +51,6 @@
                       ruby-end
                       slim-mode
                       smart-tab
-                      starter-kit-lisp
                       flymake-ruby
                       flx-ido))
 
@@ -109,6 +108,9 @@
 ;; Projectile
 (setq projectile-switch-project-action 'projectile-dired)
 (projectile-global-mode)
+(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
+(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
+(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
 
 ;; key bindings
 (global-set-key (kbd "C-b") 'backward-kill-word)
