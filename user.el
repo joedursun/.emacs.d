@@ -42,7 +42,9 @@
                       flymake-ruby
                       flx-ido
                       textmate
-                      ag))
+                      ag
+                      go-mode
+                      go-projectile))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
