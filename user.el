@@ -110,8 +110,9 @@
 (projectile-global-mode)
 (define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
 (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
-(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
+(define-key projectile-mode-map [?\s-t] 'projectile-find-file)
 
 ;; key bindings
 (global-set-key (kbd "C-b") 'backward-kill-word)
 (global-set-key (kbd "C-f") 'ag)
+(global-set-key (kbd "s-f") 'replace-string)
