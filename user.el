@@ -86,6 +86,7 @@
 (color-theme-initialize)
 (load-file "~/.emacs.d/themes/color-theme-railscasts.el")
 (color-theme-railscasts)
+(set-default-font "Inconsolata 16")
 
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 (split-window-right)
