@@ -109,3 +109,10 @@
 (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
 (define-key projectile-mode-map [?\s-t] 'projectile-find-file)
 (define-key projectile-mode-map [?\s-f] 'ag-project-regexp)
+
+(setq make-backup-files nil) ; no more backup~ files
+(setq auto-save-default nil) ; no more #auto-save# files
+
+;; reference material
+;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
+;; http://ergoemacs.org/emacs/elisp.html
