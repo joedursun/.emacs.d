@@ -45,7 +45,9 @@
                       ag
                       go-mode
                       go-projectile
-                      multiple-cursors))
+                      multiple-cursors
+                      perspective
+                      persp-projectile))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
@@ -113,6 +115,8 @@
 (setq make-backup-files nil) ; no more backup~ files
 (setq auto-save-default nil) ; no more #auto-save# files
 
+(persp-mode)
+(require 'persp-projectile)
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
 ;; http://ergoemacs.org/emacs/elisp.html

@@ -18,3 +18,4 @@ Keybinding         | Description
 <kbd>s-]</kbd> | Right indent
 <kbd>s-[</kbd> | Left indent
 <kbd>C--</kbd> | Delete line
+<kbd>C-c p k</kbd> | Kill all project buffers
