@@ -16,3 +16,6 @@
 (dolist (file custom-files)
   (when (file-exists-p  file)
   (load file)))
+
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin")))

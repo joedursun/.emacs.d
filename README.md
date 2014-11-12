@@ -19,3 +19,4 @@ Keybinding         | Description
 <kbd>s-[</kbd> | Left indent
 <kbd>C--</kbd> | Delete line
 <kbd>C-c p k</kbd> | Kill all project buffers
+<kbd>s-T</kbd> | Jump to method
