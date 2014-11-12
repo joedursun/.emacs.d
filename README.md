@@ -20,3 +20,5 @@ Keybinding         | Description
 <kbd>C--</kbd> | Delete line
 <kbd>C-c p k</kbd> | Kill all project buffers
 <kbd>s-T</kbd> | Jump to method
+<kbd>s-<up></kbd> | Go to beginning of buffer
+<kbd>s-<down></kbd> | Go to end of buffer

@@ -4,3 +4,5 @@
 (global-set-key (kbd "s-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "C-N") 'mc/mark-next-like-this)
 (global-set-key (kbd "C--") 'kill-whole-line)
+(global-set-key (kbd "s-<up>") 'beginning-of-buffer)
+(global-set-key (kbd "s-<down>") 'end-of-buffer)
