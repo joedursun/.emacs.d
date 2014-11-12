@@ -17,5 +17,5 @@
   (when (file-exists-p  file)
   (load file)))
 
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-(setq exec-path (append exec-path '("/usr/local/bin")))
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(setq exec-path (append '("/usr/local/bin") exec-path))
