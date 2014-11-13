@@ -102,7 +102,9 @@
 (textmate-mode)
 
 ;; Silver searcher
+(require 'ag)
 (setq ag-reuse-buffers 't)
+(setq ag-arguments (append '("-C 2") ag-arguments))
 
 ;; Projectile
 (setq projectile-switch-project-action 'projectile-dired)
@@ -117,6 +119,7 @@
 
 (persp-mode)
 (require 'persp-projectile)
+
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
 ;; http://ergoemacs.org/emacs/elisp.html
