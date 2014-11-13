@@ -22,3 +22,4 @@ Keybinding         | Description
 <kbd>s-T</kbd> | Jump to method
 <kbd>s-<up></kbd> | Go to beginning of buffer
 <kbd>s-<down></kbd> | Go to end of buffer
+<kbd>C-a</kbd> | Go back to first non-whitespace character on line
