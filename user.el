@@ -113,7 +113,10 @@
 (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
 (define-key projectile-mode-map [?\s-t] 'projectile-find-file)
 (define-key projectile-mode-map [?\s-f] 'ag-project-regexp)
+
+;; dired
 (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+(define-key dired-mode-map (kbd "<mouse-2>") 'dired-find-alternate-file)
 (put 'dired-find-alternate-file 'disabled nil)
 
 (setq make-backup-files nil) ; no more backup~ files
