@@ -6,4 +6,4 @@
 (global-set-key (kbd "C--") 'kill-whole-line)
 (global-set-key (kbd "s-<up>") 'beginning-of-buffer)
 (global-set-key (kbd "s-<down>") 'end-of-buffer)
-(global-set-key (kbd "C-a") 'back-to-indentation)
+(global-set-key (kbd "s-<left>") 'back-to-indentation)
