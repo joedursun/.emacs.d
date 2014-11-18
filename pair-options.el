@@ -63,5 +63,5 @@
 (global-set-key "\"" 'autopair-insert)
 (global-set-key "'"  'autopair-insert)
 (global-set-key "\`" 'autopair-insert)
-(global-set-key "|" 'autopair-insert)
-(global-set-key "<" 'autopair-insert)
+(global-set-key "|"  'autopair-insert)
+(global-set-key "<"  'autopair-insert)
