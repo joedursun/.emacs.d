@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "projectile-rails" "projectile-rails.el" (21590
-;;;;;;  25849 0 0))
+;;;### (autoloads nil "projectile-rails" "projectile-rails.el" (21611
+;;;;;;  39926 0 0))
 ;;; Generated autoloads from projectile-rails.el
 
 (autoload 'projectile-rails-mode "projectile-rails" "\
@@ -16,6 +16,11 @@ Rails mode based on projectile
 Enable `projectile-rails-mode' minor mode if this is a rails project.
 
 \(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("projectile-rails-pkg.el") (21611 39926
+;;;;;;  909301 0))
 
 ;;;***
 

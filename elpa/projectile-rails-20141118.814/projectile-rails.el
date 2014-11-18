@@ -4,7 +4,7 @@
 
 ;; Author:            Adam Sokolnicki <adam.sokolnicki@gmail.com>
 ;; URL:               https://github.com/asok/projectile-rails
-;; Version: 20141024.1347
+;; Version: 20141118.814
 ;; X-Original-Version:           0.5.0
 ;; Keywords:          rails, projectile
 ;; Package-Requires:  ((projectile "1.0.0-cvs") (inflections "1.1") (inf-ruby "2.2.6") (f "0.13.0"))
@@ -343,6 +343,20 @@ The binded variable is \"filename\"."
    '(("spec/" "spec/\\(.+\\)_spec\\.rb$"))
    "spec/${filename}_spec.rb"))
 
+(defun projectile-rails-find-test ()
+  (interactive)
+  (projectile-rails-find-resource
+   "test: "
+   '(("test/" "test/\\(.+\\)_test\\.rb$"))
+   "test/${filename}_test.rb"))
+
+(defun projectile-rails-find-fixture ()
+  (interactive)
+  (projectile-rails-find-resource
+   "fixture: "
+   `(("test/fixtures/" "test/fixtures/\\(.+\\)\\.yml$"))
+   "test/fixtures/${filename}.yml"))
+
 (defun projectile-rails-find-feature ()
   (interactive)
   (projectile-rails-find-resource
@@ -436,6 +450,17 @@ The binded variable is \"filename\"."
       (rspec-toggle-spec-and-target)
     (projectile-find-test-file)))
 
+(defun projectile-rails-find-current-test ()
+  (interactive)
+  (projectile-toggle-between-implementation-and-test))
+
+(defun projectile-rails-find-current-fixture ()
+  (interactive)
+  (projectile-rails-find-current-resource
+   "test/fixtures/"
+   "/${plural}\\.yml$"
+   'projectile-rails-find-fixture))
+
 (defun projectile-rails-find-current-migration ()
   (interactive)
   (projectile-rails-find-current-resource "db/migrate/"
@@ -454,7 +479,8 @@ The binded variable is \"filename\"."
                            "app/assets/javascripts/\\(?:.+/\\)*\\(.+\\)\\.\\(?:js\\|coffee\\)$"
                            "app/assets/stylesheets/\\(?:.+/\\)*\\(.+\\)\\.css\\(?:\\.scss\\)$"
                            "db/migrate/.*create_\\(.+\\)\\.rb$"
-                           "spec/.*/\\([a-z_]+?\\)\\(?:_controller\\)?_spec\\.rb$")
+                           "spec/.*/\\([a-z_]+?\\)\\(?:_controller\\)?_spec\\.rb$"
+                           "test/fixtures/\\(.+\\)\\.yml$")
                until (string-match re file-name)
                finally return (match-string 1 file-name))))))
 
@@ -669,7 +695,7 @@ The binded variable is \"filename\"."
 
           ((string-match-p "\\_<require\\_>" line)
            (projectile-rails-goto-gem (thing-at-point 'filename)))
-          
+
           ((string-match-p "\\_<gem\\_>" line)
            (projectile-rails-goto-gem (thing-at-point 'filename)))
 
@@ -905,6 +931,9 @@ If file does not exist and ASK in not nil it will ask user to proceed."
     (define-key map (kbd "p") 'projectile-rails-find-spec)
     (define-key map (kbd "P") 'projectile-rails-find-current-spec)
 
+    (define-key map (kbd "t") 'projectile-rails-find-test)
+    (define-key map (kbd "T") 'projectile-rails-find-current-test)
+
     (define-key map (kbd "n") 'projectile-rails-find-migration)
     (define-key map (kbd "N") 'projectile-rails-find-current-migration)
 
@@ -944,6 +973,7 @@ If file does not exist and ASK in not nil it will ask user to proceed."
     ["Find stylesheet"          projectile-rails-find-stylesheet]
     ["Find helper"              projectile-rails-find-helper]
     ["Find spec"                projectile-rails-find-spec]
+    ["Find test"                projectile-rails-find-test]
     ["Find migration"           projectile-rails-find-migration]
     ["Find lib"                 projectile-rails-find-lib]
     ["Find initializer"         projectile-rails-find-initializer]

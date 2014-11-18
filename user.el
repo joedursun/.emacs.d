@@ -11,7 +11,6 @@
 (global-linum-mode 1)
 
 (auto-compression-mode 1)
-(add-hook 'prog-mode-hook #'paredit-mode)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -61,6 +60,14 @@
 (require 'smart-tab)
 (require 'company)
 (require 'multiple-cursors)
+
+(setq skeleton-pair t)
+(global-set-key "(" 'skeleton-pair-insert-maybe)
+(global-set-key "[" 'skeleton-pair-insert-maybe)
+(global-set-key "{" 'skeleton-pair-insert-maybe)
+(global-set-key "'" 'skeleton-pair-insert-maybe)
+(global-set-key "\"" 'skeleton-pair-insert-maybe)
+(global-set-key "{" 'skeleton-pair-insert-maybe)
 
 ;; Ruby
 (require 'flymake-ruby)

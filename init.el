@@ -11,7 +11,8 @@
 (defvar custom-files '("~/.emacs.d/window-size.el"
                        "~/.emacs.d/user.el"
                        "~/.emacs.d/macros.el"
-                       "~/.emacs.d/key-bindings.el"))
+                       "~/.emacs.d/key-bindings.el"
+                       "~/.emacs.d/pair-options.el"))
 
 (dolist (file custom-files)
   (when (file-exists-p  file)
