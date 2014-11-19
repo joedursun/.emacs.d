@@ -63,14 +63,6 @@
 (require 'company)
 (require 'multiple-cursors)
 
-(setq skeleton-pair t)
-(global-set-key "(" 'skeleton-pair-insert-maybe)
-(global-set-key "[" 'skeleton-pair-insert-maybe)
-(global-set-key "{" 'skeleton-pair-insert-maybe)
-(global-set-key "'" 'skeleton-pair-insert-maybe)
-(global-set-key "\"" 'skeleton-pair-insert-maybe)
-(global-set-key "{" 'skeleton-pair-insert-maybe)
-
 ;; Ruby
 (require 'flymake-ruby)
 (require 'ruby-end)
@@ -134,6 +126,19 @@
 (persp-mode)
 (require 'persp-projectile)
 
+;; Yasnippet
+(yas-global-mode 1)
+(add-hook 'prog-mode-hook
+          '(lambda ()
+             (yas-minor-mode)))
+
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
 ;; http://ergoemacs.org/emacs/elisp.html
+(setq skeleton-pair t)
+(global-set-key "(" 'skeleton-pair-insert-maybe)
+(global-set-key "[" 'skeleton-pair-insert-maybe)
+(global-set-key "{" 'skeleton-pair-insert-maybe)
+(global-set-key "'" 'skeleton-pair-insert-maybe)
+(global-set-key "\"" 'skeleton-pair-insert-maybe)
+(global-set-key "{" 'skeleton-pair-insert-maybe)
