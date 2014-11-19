@@ -9,6 +9,7 @@
 (line-number-mode 1)
 (column-number-mode 1)
 (global-linum-mode 1)
+(setq skeleton-pair t)
 
 (auto-compression-mode 1)
 
@@ -135,10 +136,4 @@
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
 ;; http://ergoemacs.org/emacs/elisp.html
-(setq skeleton-pair t)
-(global-set-key "(" 'skeleton-pair-insert-maybe)
-(global-set-key "[" 'skeleton-pair-insert-maybe)
-(global-set-key "{" 'skeleton-pair-insert-maybe)
-(global-set-key "'" 'skeleton-pair-insert-maybe)
-(global-set-key "\"" 'skeleton-pair-insert-maybe)
-(global-set-key "{" 'skeleton-pair-insert-maybe)
+;; https://github.com/emacs-tw/awesome-emacs <- list of useful packages
