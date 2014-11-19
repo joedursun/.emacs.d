@@ -46,7 +46,9 @@
                       go-projectile
                       multiple-cursors
                       perspective
-                      persp-projectile))
+                      persp-projectile
+                      yasnippet
+                      ace-jump-mode))
 
 (when (not (file-exists-p "~/.emacs.d/elpa"))
   (package-refresh-contents))
