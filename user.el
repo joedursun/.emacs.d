@@ -1,10 +1,3 @@
-;; Rebind keys
-;;(when (eq system-type 'darwin)
-;;  (setq mac-command-modifier 'meta)
-;;  (setq mac-option-modifier 'super))
-
-;; Stu's init.el
-;; https://gist.github.com/stuarth/98e5d6ad473d294e4037
 (require 'linum)
 (line-number-mode 1)
 (column-number-mode 1)

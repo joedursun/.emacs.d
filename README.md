@@ -12,8 +12,8 @@ Keybinding         | Description
 <kbd>C-N</kbd> | Mark next occurence of selection
 <kbd>C-t</kbd> | Delete contents of current form (mostly for Clojure; useful in JS and Go files as well)
 <kbd>s-r</kbd> | Replace string
-<kbd>C-b</kbd> | Backward delete word
-<kbd>C-f</kbd> | Search a given directory via The Silver Searcher
+<kbd>C-b</kbd> | Jump backward one word
+<kbd>C-f</kbd> | Jump forward one word
 <kbd>s-l</kbd> | Go to line
 <kbd>s-]</kbd> | Right indent
 <kbd>s-[</kbd> | Left indent
