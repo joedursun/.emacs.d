@@ -9,7 +9,7 @@
 ;;       Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/clojure-emacs/clojure-mode
 ;; Keywords: languages clojure clojurescript lisp
-;; Version: 20141204.854
+;; Version: 20141209.1412
 ;; X-Original-Version: 4.0.0-cvs
 ;; Package-Requires: ((emacs "24.1"))
 
@@ -799,7 +799,10 @@ it from Lisp code, use (put-clojure-indent 'some-symbol 'defun)."
   (if 1)
   (if-not 1)
   (case 1)
+  (cond 0)
   (condp 2)
+  (cond-> 1)
+  (cond->> 1)
   (when 1)
   (while 1)
   (when-not 1)
@@ -810,6 +813,8 @@ it from Lisp code, use (put-clojure-indent 'some-symbol 'defun)."
   (doto 1)
   (locking 1)
   (proxy 2)
+  (-> 1)
+  (->> 1)
   (with-open 1)
   (with-precision 1)
   (with-local-vars 1)
@@ -838,11 +843,6 @@ it from Lisp code, use (put-clojure-indent 'some-symbol 'defun)."
   (if-let 1)
   (when-some 1)
   (if-some 1)
-
-  ;; data structures
-  (defstruct 1)
-  (struct-map 1)
-  (assoc 1)
 
   (defmethod 'defun)
 

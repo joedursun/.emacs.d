@@ -1570,7 +1570,7 @@
 	       (6 1)))
 	     "basic support for magit links" single])
  (org-journal .
-	      [(1 6 2)
+	      [(1 6 3)
 	       nil "a simple org-mode based journaling mode" single])
  (org-gnome .
 	    [(0 1)
@@ -3682,8 +3682,8 @@
 	 [(0 1 1)
 	  nil "Table component for Emacs Lisp" single])
  (csharp-mode .
-	      [(0 8 6)
-	       nil "C# mode derived mode" single])
+	      [(0 8 8)
+	       nil "C# mode derived mode" tar])
  (cryptol-mode .
 	       [(0 1 0)
 		nil "Cryptol major mode for Emacs" single])
@@ -3876,11 +3876,13 @@
 		       ((color-theme
 			 (6 6 1)))
 		       "A dark color theme for GNU Emacs." single])
- (color-theme-active .
-		     [(0 0 1)
-		      ((color-theme
-			(6 6 1)))
-		      "Active theme inspired by jEdit theme of the same name" single])
+ (inf-clojure .
+	      [(1 0 0)
+	       ((emacs
+		 (24 1))
+		(clojure-mode
+		 (4 0)))
+	       "an inferior-clojure mode" single])
  (color-theme .
 	      [(6 6 1)
 	       nil "install color themes" single])
@@ -3946,7 +3948,7 @@
 				     (3 0)))
 				   "Extra font-locking for Clojure mode" single])
  (clojure-mode .
-	       [(3 0 1)
+	       [(4 0 0)
 		((emacs
 		  (24 1)))
 		"Major mode for Clojure code" single])
@@ -4254,7 +4256,7 @@
 		  (1 11 5)))
 		"Space align various Clojure forms" single])
  (alchemist .
-	    [(0 9 0)
+	    [(0 10 0)
 	     ((emacs
 	       (24)))
 	     "Elixir tooling integration into emacs" tar])

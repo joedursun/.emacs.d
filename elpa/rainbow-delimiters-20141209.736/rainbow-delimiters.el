@@ -1,4 +1,4 @@
-;;; rainbow-delimiters.el --- Highlight nested parens, brackets, braces a different color at each depth. -*- lexical-binding: t -*-
+;;; rainbow-delimiters.el --- Highlight nested brackets a different color at each depth -*- lexical-binding: t -*-
 
 ;; Copyright (C)
 ;;   2010-2013 Jeremy Rayman
@@ -7,7 +7,7 @@
 ;;         Fanael Linithien <fanael4@gmail.com>
 ;; Maintainer: Fanael Linithien <fanael4@gmail.com>
 ;; Created: 2010-09-02
-;; Version: 20141205.213
+;; Version: 20141209.736
 ;; X-Original-Version: 2.0.1
 ;; Keywords: faces, convenience, lisp, tools
 ;; Homepage: https://github.com/Fanael/rainbow-delimiters
