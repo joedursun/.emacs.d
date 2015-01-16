@@ -8,8 +8,11 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar custom-files '("~/.emacs.d/window-size.el"
-                       "~/.emacs.d/user.el"
+(require 'maxframe)
+(setq mf-max-width 1680)  ;; Pixel width of main monitor.
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+(defvar custom-files '("~/.emacs.d/user.el"
                        "~/.emacs.d/macros.el"
                        "~/.emacs.d/key-bindings.el"
                        "~/.emacs.d/code-navigation.el"
