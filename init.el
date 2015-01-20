@@ -16,11 +16,13 @@
                        "~/.emacs.d/macros.el"
                        "~/.emacs.d/key-bindings.el"
                        "~/.emacs.d/code-navigation.el"
-                       "~/.emacs.d/pair-options.el"))
+                       "~/.emacs.d/pair-options.el"
+                       "~/.emacs.d/oracle.el"))
 
 (dolist (file custom-files)
   (when (file-exists-p  file)
   (load file)))
 
-(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(setenv "PATH" (concat "/usr/local/bin:/Users/jdursun/go/bin:" (getenv "PATH")))
 (setq exec-path (append '("/usr/local/bin") exec-path))
+(setenv "GOPATH" "/Users/jdursun/go")
