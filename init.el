@@ -23,6 +23,8 @@
   (when (file-exists-p  file)
   (load file)))
 
+
+(setq backup-directory-alist `(("." . "~/.emacs_saves")))
 (setenv "PATH" (concat "/usr/local/bin:/Users/jdursun/go/bin:" (getenv "PATH")))
 (setq exec-path (append '("/usr/local/bin") exec-path))
 (setenv "GOPATH" "/Users/jdursun/go")
