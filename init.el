@@ -28,3 +28,4 @@
 (setenv "PATH" (concat "/usr/local/bin:/Users/jdursun/go/bin:" (getenv "PATH")))
 (setq exec-path (append '("/usr/local/bin") exec-path))
 (setenv "GOPATH" "/Users/jdursun/go")
+(global-auto-revert-mode t)
