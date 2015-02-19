@@ -29,3 +29,23 @@
 (setq exec-path (append '("/usr/local/bin") exec-path))
 (setenv "GOPATH" "/Users/jdursun/go")
 (global-auto-revert-mode t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-idle-delay nil)
+ '(elpy-rpc-backend "rope")
+ '(elpy-rpc-python-command "/Users/jdursun/.pyenv/shims/python")
+ '(smart-tab-completion-functions-alist
+   (quote
+    ((emacs-lisp-mode . company-complete)
+     (text-mode . dabbrev-completion)
+     (clojure-mode . company-complete)
+     (cider-repl-mode . company-complete)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
