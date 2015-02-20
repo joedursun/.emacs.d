@@ -129,6 +129,11 @@
           '(lambda ()
              (yas-minor-mode)))
 
+;; Neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
 ;; http://ergoemacs.org/emacs/elisp.html
