@@ -8,3 +8,4 @@
 (global-set-key (kbd "s-<down>") 'end-of-buffer)
 (global-set-key (kbd "s-<left>") 'back-to-indentation)
 (global-set-key (kbd "C-SPC") 'ace-jump-mode)
+(global-set-key (kbd "C-@") 'ace-jump-mode)
