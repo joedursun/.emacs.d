@@ -25,3 +25,6 @@ Keybinding         | Description
 <kbd>s-<left></kbd> | Go back to first non-whitespace character on line
 <kbd>s-k</kbd> | Kill current buffer
 <kbd>C-c SPC</kbd> | Jump to word (ace-jump-word-mode)
+<kbd>F8</kbd> | Toggle Neotree
+
+Rails project specific keybindings can be found [here](https://github.com/asok/projectile-rails#interactive-commands)
