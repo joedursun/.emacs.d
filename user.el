@@ -61,6 +61,7 @@
 (require 'flymake-ruby)
 (require 'ruby-end)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 (custom-set-variables
  '(company-idle-delay nil)
@@ -132,7 +133,10 @@
 ;; Neotree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
-(setq projectile-switch-project-action 'neotree-projectile-action)
+;; the following line causes buffers to no longer be grouped by
+;; project as an unfortunate side effect
+
+;; (setq projectile-switch-project-action 'neotree-projectile-action)
 
 ;; reference material
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Index.html
