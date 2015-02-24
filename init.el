@@ -39,6 +39,7 @@
  '(company-idle-delay nil)
  '(elpy-rpc-backend "rope")
  '(elpy-rpc-python-command "/Users/jdursun/.pyenv/shims/python")
+ '(python-check-command "/Users/jdursun/.pyenv/shims/pyflakes")
  '(smart-tab-completion-functions-alist
    (quote
     ((emacs-lisp-mode . company-complete)
