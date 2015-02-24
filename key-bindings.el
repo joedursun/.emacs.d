@@ -9,3 +9,4 @@
 (global-set-key (kbd "s-<left>") 'back-to-indentation)
 (global-set-key (kbd "C-SPC") 'ace-jump-mode)
 (global-set-key (kbd "C-@") 'ace-jump-mode)
+(global-set-key (kbd "C-c i m") 'elpy-importmagic-fixup)

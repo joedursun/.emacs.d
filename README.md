@@ -26,5 +26,5 @@ Keybinding         | Description
 <kbd>s-k</kbd> | Kill current buffer
 <kbd>C-c SPC</kbd> | Jump to word (ace-jump-word-mode)
 <kbd>F8</kbd> | Toggle Neotree
-
+<kbd>C-c i m</kbd> | Importmagic fixup (python mode)
 Rails project specific keybindings can be found [here](https://github.com/asok/projectile-rails#interactive-commands)
