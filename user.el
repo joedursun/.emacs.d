@@ -16,6 +16,40 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
+(defvar my-packages '(better-defaults
+                      cljsbuild-mode
+                      clojure-mode
+                      company
+                      dash
+                      elisp-slime-nav
+                      find-file-in-project
+                      idle-highlight-mode
+                      ido-ubiquitous
+                      magit
+                      paredit
+                      projectile
+                      projectile-rails
+                      ruby-end
+                      slim-mode
+                      smart-tab
+                      flymake-ruby
+                      flx-ido
+                      textmate
+                      ag
+                      go-mode
+                      go-projectile
+                      multiple-cursors
+                      perspective
+                      persp-projectile
+                      yasnippet
+                      ace-jump-mode))
+
+(when (not (file-exists-p "~/.emacs.d/elpa"))
+  (package-refresh-contents))
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
+
 (require 'textmate)
 (require 'projectile)
 (require 'better-defaults)

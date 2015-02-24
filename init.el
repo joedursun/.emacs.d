@@ -17,8 +17,7 @@
                        "~/.emacs.d/key-bindings.el"
                        "~/.emacs.d/code-navigation.el"
                        "~/.emacs.d/pair-options.el"
-                       "~/.emacs.d/oracle.el"
-                       "~/.emacs.d/python.el"))
+                       "~/.emacs.d/oracle.el"))
 
 (dolist (file custom-files)
   (when (file-exists-p  file)
