@@ -16,7 +16,7 @@
                        "~/.emacs.d/macros.el"
                        "~/.emacs.d/key-bindings.el"
                        "~/.emacs.d/code-navigation.el"
-                       "~/.emacs.d/pair-options.el"
+                       ;; "~/.emacs.d/pair-options.el"
                        "~/.emacs.d/oracle.el"
                        "~/.emacs.d/python.el"))
 
@@ -38,8 +38,8 @@
  ;; If there is more than one, they won't work right.
  '(company-idle-delay nil)
  '(elpy-rpc-backend "rope")
- '(elpy-rpc-python-command "/Users/jdursun/.pyenv/shims/python")
- '(python-check-command "/Users/jdursun/.pyenv/shims/pyflakes")
+ '(elpy-rpc-python-command "/Users/jdursun/Envs/lovely/bin/python")
+ '(python-check-command "/Users/jdursun/Envs/lovely/bin/pyflakes")
  '(smart-tab-completion-functions-alist
    (quote
     ((emacs-lisp-mode . company-complete)
